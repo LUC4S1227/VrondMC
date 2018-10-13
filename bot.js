@@ -42,7 +42,7 @@ client.on("message", async message => {
   } 
   // comando Servidor 
   if(comando === "servidor") {
-    return message.reply("Ainda estamos sem IP! Lamento muito. :sob:"); 
+    return message.reply("Ainda estamos sem ip definido! Lamento muito. :sob:"); 
   }
   // coamdno ping
   if(comando === "ping") {
