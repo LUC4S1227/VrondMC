@@ -38,7 +38,7 @@ client.on("message", async message => {
 
   // comando regras 
   if(comando === "regras") {
-    return message.reply("Para ver as regras vá em #regras, Tente não violar as regras viu! Rsrsrsrsrs :D");
+    return message.reply("Para ver as regras vá em #ajuda, Tente não violar as regras viu! Rsrsrsrsrs :D");
   } 
   // coamdno ping
   if(comando === "ping") {
