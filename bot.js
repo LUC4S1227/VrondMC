@@ -101,6 +101,7 @@ client.on("message", async message => {
       return message.reply("Por favor mencione um membro válido deste servidor");
     if(!member.bannable) 
       return message.reply("Eu não posso banir este usuário! Eles pode ter um cargo mais alto ou eu não tenho permissões de banir?");
+    
     let reason = args.slice(1).join(' ');
     if(!reason) reason = "Nenhuma razão fornecida";
     await member.ban(reason)
