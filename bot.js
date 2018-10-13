@@ -102,4 +102,19 @@ client.on("message", async message => {
   
 });
 
+client.on("message", async message => {
+  let msg = message.content.toLowerCase();
+  if (message.author.bot) return undefined;
+
+  const command = args.shift().toLowerCase();
+
+  try {
+    let commands = require("./commands/${command}.js");
+    commands.run(client, message, args);
+  } catch (e) {
+    console.log(e);
+  } finally {}
+
+});
+
 client.login(config.token);
