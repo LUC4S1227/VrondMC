@@ -40,6 +40,10 @@ client.on("message", async message => {
   if(comando === "regras") {
     return message.reply("Para ver as regras vá em #ajuda, Tente não violar as regras viu! Rsrsrsrsrs :D");
   } 
+  // comando ip 
+  if(comando === "ip") {
+    return message.reply("Ainda estamos sem IP! Lamento muito. :sob:"); 
+  }
   // coamdno ping
   if(comando === "ping") {
     const m = await message.channel.send("Ping?");
